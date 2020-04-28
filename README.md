@@ -5,7 +5,7 @@ tekstu na podstawie dostarczonego obrazka. Możesz wykorzystać bibliotekę:
 https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j/4.4.1
 
 2.Technology backend:
- - Java11
+ - Java 8
  - Spring Boot
  - remote mySql
  
