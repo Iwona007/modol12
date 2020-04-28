@@ -15,6 +15,4 @@ https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j/4.4.1
  
  4.Technology for frontend:
  - Angular CLI
- - HTML + Css
- - Material Design for Bootstrap
  
