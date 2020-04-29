@@ -5,7 +5,7 @@ import iwona.pl.modol12project.service.OcrService;
 import java.util.List;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin
+@CrossOrigin("https://modol12-angular3.herokuapp.com")
 @RestController
 @RequestMapping("/ocr")
 public class OcrController {
