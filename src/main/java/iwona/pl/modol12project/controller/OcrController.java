@@ -5,8 +5,9 @@ import iwona.pl.modol12project.service.OcrService;
 import java.util.List;
 import org.springframework.web.bind.annotation.*;
 
+//@CrossOrigin()
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/ocr")
 public class OcrController {
 
     private OcrService ocrService;
