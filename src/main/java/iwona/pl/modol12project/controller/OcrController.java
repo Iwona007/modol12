@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/ocr")
+@RequestMapping("/api")
 public class OcrController {
 
     private OcrService ocrService;
