@@ -15,17 +15,17 @@ public class OcrController {
         this.ocrService = ocrService;
     }
 
-    @PostMapping("/add")
+    @PostMapping("/quote-add")
     public String addImage(@RequestBody Image image) {
         return ocrService.adToDb(image);
     }
 
-    @GetMapping("/all")
+    @GetMapping("/quote-all")
     public List<Image> getAll() {
         return ocrService.getAll();
     }
 
-    @DeleteMapping("/all/{id}")
+    @DeleteMapping("/quote-all/{id}")
     public void delete(@PathVariable Long id){
         ocrService.delete(id);
     }
