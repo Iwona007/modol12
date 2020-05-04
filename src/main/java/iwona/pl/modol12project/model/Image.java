@@ -9,6 +9,12 @@ public class Image {
     }
 
     public Image(String url, String content) {
+//        this.id = id;
+        this.url = url;
+        this.content = content;
+    }
+
+    public Image(long id, String url, String content) {
         this.id = id;
         this.url = url;
         this.content = content;

@@ -1,8 +1,9 @@
 package iwona.pl.modol12project.dao;
 
 import iwona.pl.modol12project.model.Image;
+import java.util.ArrayList;
 import java.util.List;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import java.util.Map;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -24,8 +25,15 @@ public class DaoImpl implements DaoRepo {
 
     @Override
     public List<Image> getAll() {
+        List<Image> newList = new ArrayList<>();
         String sql = "SELECT * FROM " + NAME;
-        return jdbcTemplate.query(sql, new BeanPropertyRowMapper(Image.class));
+//        return jdbcTemplate.query(sql, new BeanPropertyRowMapper(Image.class));
+        List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql);
+        maps.stream().forEach(element -> newList.add(new Image(
+                Long.parseLong(String.valueOf(element.get("id"))),
+                String.valueOf( element.get("url")),
+                String.valueOf(element.get("content")))));
+        return newList;
     }
 
     @Override
