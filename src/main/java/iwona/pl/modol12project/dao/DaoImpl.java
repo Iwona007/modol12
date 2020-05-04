@@ -26,11 +26,11 @@ public class DaoImpl implements DaoRepo {
     @Override
     public List<Image> getAll() {
         List<Image> newList = new ArrayList<>();
-        String sql = "SELECT * FROM " + NAME;
+        String sql = "SELECT url, content FROM " + NAME;
 //        return jdbcTemplate.query(sql, new BeanPropertyRowMapper(Image.class));
         List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql);
         maps.stream().forEach(element -> newList.add(new Image(
-                Long.parseLong(String.valueOf(element.get("id"))),
+//                Long.parseLong(String.valueOf(element.get("id"))),
                 String.valueOf( element.get("url")),
                 String.valueOf(element.get("content")))));
         return newList;
