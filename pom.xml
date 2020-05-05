@@ -54,6 +54,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
+
 <!--test-->
         <dependency>
             <groupId>org.assertj</groupId>
