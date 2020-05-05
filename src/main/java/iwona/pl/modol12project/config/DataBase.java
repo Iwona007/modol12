@@ -18,12 +18,12 @@ public class DataBase {
         return new JdbcTemplate(dataSource);
     }
 
+//
 //    @EventListener(ApplicationReadyEvent.class)
 //    public void initResult() {
 //        String sql = "CREATE TABLE images(id int auto_increment, url varchar (255), content varchar(500), primary key(id))";
 //        jdbcTemplate().update(sql);
 //    }
-
 //    @EventListener(ApplicationReadyEvent.class)
 //    public void dropTable() {
 //        String sql;
