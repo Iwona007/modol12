@@ -13,6 +13,7 @@ import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -51,7 +52,8 @@ class OcrServiceTest {
     }
 
     @Test
-    void should_read_url_image() throws IOException, TesseractException {
+    @DisplayName("Should read url image")
+    void shouldReadUrlImage() throws IOException, TesseractException {
         System.out.println("doOCR on a URL image");
 //     given
         URL imageFile = new URL("https://www.joshloe.com/wp-content/uploads/2019/09/strive-for-progress-not-perfection-quote-quoteoftheday-quotestoliveby-motiva-735x445.jpg");
@@ -71,7 +73,8 @@ class OcrServiceTest {
     }
 
     @Test
-    void should_get_all() {
+    @DisplayName("Should get all images")
+    void shouldGetAll() {
         List<Image> images = ocrService.getAll();
         assertThat(images, Matchers.hasSize(2));
     }

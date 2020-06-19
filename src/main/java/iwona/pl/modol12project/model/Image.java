@@ -1,4 +1,5 @@
 package iwona.pl.modol12project.model;
+
 public class Image {
 
     private Long id;
@@ -41,10 +42,10 @@ public class Image {
 
     @Override
     public String toString() {
-        return "Image{" +
-                "id=" + id +
-                ", url='" + url + '\'' +
-                ", content='" + content + '\'' +
-                '}';
+        return "Image{"
+                +"id=" + id
+                +", url='" + url + '\''
+                +", content='" + content + '\''
+                +'}';
     }
 }

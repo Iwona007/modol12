@@ -3,6 +3,7 @@ package iwona.pl.modol12project.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import iwona.pl.modol12project.model.Image;
 import java.net.URL;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -26,6 +27,7 @@ class OcrControllerTest {
     ObjectMapper objectMapper = new ObjectMapper();
 
     @Test
+    @DisplayName("Should add Image")
     @DirtiesContext
     void addImage() throws Exception {
         URL url = new URL("https://yourpositiveoasis.com/wp-content/uploads/2018/06/35145383_2037359446335206_7995205548490358784_n.jpg");
@@ -39,12 +41,13 @@ class OcrControllerTest {
     }
 
     @Test
+    @DisplayName("Should get all images test")
     @DirtiesContext
-    void should_get_all_images_test() throws Exception {
+    void shouldGetAllImagesTest() throws Exception {
         this.mockMvc.perform(MockMvcRequestBuilders.get("/ocr/all"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("application/json"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.[0].url")
-                        .value("https://yourpositiveoasis.com/wp-content/uploads/2018/06/35429668_2050099711727846_1823917686845865984_n.jpg"));
+                        .value("http://img.picturequotes.com/2/516/515509/hed-once-known-a-man-who-said-that-life-hinged-on-the-moment-that-everything-changed-in-the-blink-quote-1.jpg"));
     }
 }
