@@ -27,7 +27,7 @@ public class OcrController {
         return ocrService.getAll();
     }
 
-    @DeleteMapping("/all/{id}")
+    @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable Long id){
         ocrService.delete(id);
     }
