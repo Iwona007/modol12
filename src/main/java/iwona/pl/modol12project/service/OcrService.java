@@ -24,14 +24,14 @@ public class OcrService {
     @Autowired
     public OcrService(DaoRepo daoRepo) {
         this.daoRepo = daoRepo;
-//        Image image = new Image ( "https://yourpositiveoasis.com/wp-content/uploads/2018/06/35429668_2050099711727846_1823917686845865984_n.jpg",
-//                "\t\n" +
-//                        "Knowing what you\n" +
-//                        "need to do to improve\n" +
-//                        "your life takes wisdom.\n" +
-//                        "Pushing yourself to\n" +
-//                        "do it takes courage.");
-//        daoRepo.addImage(image);
+        Image image = new Image ( "https://yourpositiveoasis.com/wp-content/uploads/2018/06/35429668_2050099711727846_1823917686845865984_n.jpg",
+                "\t\n" +
+                        "Knowing what you\n" +
+                        "need to do to improve\n" +
+                        "your life takes wisdom.\n" +
+                        "Pushing yourself to\n" +
+                        "do it takes courage.");
+        daoRepo.addImage(image);
     }
 
     public String read(String url) {

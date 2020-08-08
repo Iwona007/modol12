@@ -23,6 +23,7 @@ class OcrControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
+
     @Autowired
     ObjectMapper objectMapper = new ObjectMapper();
 
@@ -47,7 +48,7 @@ class OcrControllerTest {
         this.mockMvc.perform(MockMvcRequestBuilders.get("/ocr/all"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("application/json"))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.[0].url")
+                .andExpect(MockMvcResultMatchers.jsonPath("$.[2].url")
                         .value("http://img.picturequotes.com/2/516/515509/hed-once-known-a-man-who-said-that-life-hinged-on-the-moment-that-everything-changed-in-the-blink-quote-1.jpg"));
     }
 }
