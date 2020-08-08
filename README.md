@@ -30,5 +30,3 @@ images for mvcmock test:
 images for swagger ui
 ![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/swagger-ui.PNG)
 
-images for angular 
-![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/angular-all.PNG)
