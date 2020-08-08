@@ -14,12 +14,21 @@ https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j/4.4.1
  - tess4j: a Java JNA wrapper for Tesseract OCR API
  
  4.Technology for frontend:
- - Angular CLI
+ - Angular CLI : https://github.com/Iwona007/modol12-angular
 
  Please be aware that tess4j does not accept all images even in required format.
  
+images for spring boot part only: 
 ![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/heroku-all.PNG)
+
+images for Mockito test
 ![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/mock-test.PNG)
+
+images for mvcmock test:
 ![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/mvcMock-test.PNG)
+
+images for swagger ui
 ![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/swagger-ui.PNG)
+
+images for angular heroku
 ![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/angular-all.PNG)
